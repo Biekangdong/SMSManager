@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 没有焦点时-->
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/btn_check_off"/>
+    <!--选中时 -->
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/btn_check_on"/>
+    <item
+        android:drawable="@drawable/btn_check_off"/>
+</selector>

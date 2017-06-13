@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMainBlue">#0077ff</color>
+
+    <!-- 常用颜色值 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="red">#DD1718</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="main_green">#40AA53</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="main_black">#333</color>
+    <color name="main_purple">#576B95</color>
+    <color name="red_light">#f97272</color>
+    <color name="red_main">#DD1718</color>
+    <color name="alpha">#00000000</color>
+    <color name="lighter_gray">#ffcccccc</color>
+    <color name="light_blue">#68D9FF</color>
+
+    <color name="item_bg">#EEEEEE</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="hint_text">#999999</color>
+    <color name="text_333">#333</color>
+    <color name="text_555">#555</color>
+    <color name="halfalpha">#70000000</color>
+</resources>

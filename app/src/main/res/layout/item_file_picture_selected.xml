@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.smsmanager.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_picture"/>
+        <View
+            android:id="@+id/v_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#70000000"
+            android:visibility="gone"
+            ></View>
+        <CheckBox
+            android:id="@+id/cb_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_8"
+            android:checked="true"
+            android:enabled="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:button="@drawable/btn_check_on"
+
+            />
+    </RelativeLayout>
+</com.example.smsmanager.widget.SquareLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/ll_title_checked_no"
+            layout="@layout/title_normal" />
+
+        <include
+            android:id="@+id/ll_title_checked"
+            layout="@layout/title_select"
+            android:visibility="gone" />
+
+        <View style="@style/h_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_sms_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_new_sms"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shap_shadow"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="新建"
+        android:textColor="@color/colorMainBlue"
+        android:textSize="@dimen/text_size14" />
+</RelativeLayout>

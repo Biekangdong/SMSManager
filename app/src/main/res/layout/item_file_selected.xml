@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+   <!--descendantFocusability 表示覆盖子控件获得焦点，解决itemclick点击无效问题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <CheckBox
+            android:id="@+id/cb_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:button="@drawable/contacts_checked_selector" />
+       <ImageView
+           android:id="@+id/iv_image"
+           android:layout_width="65dp"
+           android:layout_height="65dp"
+           android:layout_toRightOf="@id/cb_checked"
+           android:layout_marginLeft="8dp"
+           android:scaleType="fitXY"
+           android:background="@drawable/empty_music"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_image"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+             <TextView
+                 android:id="@+id/file_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/black"
+                 android:textSize="@dimen/text_size_main"
+                 android:singleLine="true"
+                 android:text=""
+                 />
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_555"
+                android:textSize="@dimen/text_size12"
+                android:singleLine="true"
+                android:text=""
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:id="@+id/file_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_555"
+                android:textSize="@dimen/text_size12"
+                android:singleLine="true"
+                android:text=""
+                android:layout_marginTop="3dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/h_line"
+        android:layout_height="1dp"></View>
+</LinearLayout>

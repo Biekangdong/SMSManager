@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="设置手机号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_main" />
+    </RelativeLayout>
+    <View style="@style/h_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        >
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/text_size_main"
+            android:hint="输入手机号"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:singleLine="true"
+            android:padding="10dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_sava"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:clickable="true"
+        android:background="@drawable/shape_corner_light_blue"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_main"
+        />
+
+</LinearLayout>

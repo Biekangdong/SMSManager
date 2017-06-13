@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">短信</string>
+    <!--权限permission-->
+    <string name="phone_permission">此应用程序需要访问您的手机信息和读写你的内存卡权限，以便您可以获取手机号和存取文件.</string>
+    <string name="read_contacts_permission">此应用程序需要手机联系人，以便您可以获取联系人信息</string>
+    <string name="rationale_ask_again">此应用程序可能无法正常工作，没有请求的权限。打开应用程序设置屏幕修改应用程序权限</string>
+    <string name="title_settings_dialog">权限请求</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="about">\t\t此应用程序是android短信系统，包括：短信编辑、发送、接收、管理、查询、删除、导入/导出等功能\n
+                            \t\t由于本系统数据存在本地数据库中，所以你可以通过设置不同的手机号,来模拟不同手机发送短信</string>
+</resources>

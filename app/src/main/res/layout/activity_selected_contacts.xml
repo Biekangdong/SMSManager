@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/back" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="联系人"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_main" />
+
+                <TextView
+                    android:id="@+id/tv_selected_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="（0）"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_main" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/tv_ok"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_ok" />
+        </RelativeLayout>
+
+        <View style="@style/h_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/tv_right_menu"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="@drawable/shape_corner_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search_blue" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="搜索联系人"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size14" />
+
+            <ImageView
+                android:id="@+id/iv_clear_search"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/ic_clear_search"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/item_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_contacts_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="全部联系人"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_main" />
+
+            <CheckBox
+                android:id="@+id/cb_selected_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:button="@drawable/contacts_checked_selector"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size14"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/cb_selected_all"
+                android:gravity="center_vertical"
+                android:text="全选"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size14"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_contacts_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            <LinearLayout
+                android:id="@+id/ll_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/white">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="未找到匹配选项"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_main"
+            android:visibility="gone" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_new_contacts"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shap_shadow"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="新建联系人"
+        android:textColor="@color/colorMainBlue"
+        android:textSize="@dimen/text_size14" />
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_main" />
+    </RelativeLayout>
+    <View style="@style/h_line" />
+    <!--手机号-->
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingRight="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机号"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/text_size_main" />
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow" />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:layout_toLeftOf="@id/iv_phone"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/text_size_main"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <!--导出位置-->
+    <RelativeLayout
+        android:id="@+id/rl_emport"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_emport_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="导出位置"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/text_size_main" />
+
+        <ImageView
+            android:id="@+id/iv_emport"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow" />
+        <TextView
+            android:id="@+id/tv_emport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:layout_toLeftOf="@id/iv_emport"
+            android:layout_toRightOf="@id/tv_emport_text"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/text_size_main"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:paddingLeft="12dp"
+            android:singleLine="true"/>
+    </RelativeLayout>
+    <View
+        style="@style/h_line"
+        android:layout_height="0.6dp"></View>
+    <!--关于-->
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关于"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/text_size_main" />
+
+        <ImageView
+            android:id="@+id/iv_about"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow" />
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:layout_toLeftOf="@id/iv_about"
+            android:textColor="@color/text_333"
+            android:textSize="@dimen/text_size_main"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tv_out"
+        android:background="@drawable/shape_corner_light_blue"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="退出"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_main"
+        android:gravity="center"/>
+</LinearLayout>

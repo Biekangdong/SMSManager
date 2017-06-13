@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  解决 Android N 上 安装Apk时报错：android.os.FileUriExposedException:
+        file:///storage/emulated/0/Download/appName-2.3.0.apk exposed beyond app through Intent.getData()
+           注意：
+            path：需要临时授权访问的路径（.代表所有路径）
+            name：就是你给这个访问路径起个名字
+        -->
+    <paths>
+        <files-path
+            name="import"
+            path="import" />
+        <external-path
+            name="external_storage_root"
+            path="." />
+    </paths>
+</resources>
